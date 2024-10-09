@@ -14,6 +14,7 @@ public class Interactor : MonoBehaviour
             RaycastHit _hit;
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out _hit, 2f))
             {
+                Debug.Log(_hit.collider.gameObject.name);
                 // Si el rayo colisionó con un objeto interactuable entonces interactuamos
                 if (_hit.collider.gameObject.GetComponent<InteractableObject>() != null)
                 {

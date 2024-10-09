@@ -21,6 +21,7 @@ public class Door : MonoBehaviour
     // funcion de interaccion
     public void Interaction()
     {
+        Debug.Log("Interaccion");
         if (!isLocked)
         {
             if (isOpen)
