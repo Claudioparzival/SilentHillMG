@@ -332,6 +332,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
   m_PrefabInstance: {fileID: 1731220464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &396332756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 64889217898853193, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
+  m_PrefabInstance: {fileID: 6611894627826248463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &396332761
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396332756}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 717c8cbdbf3c403499732ac3ed459462, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!108 &428598116 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 1597661923607694111, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
@@ -465,6 +491,91 @@ MonoBehaviour:
   - {fileID: 79667281}
   - {fileID: 98068244}
   - {fileID: 324984059}
+--- !u!1 &486713274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486713275}
+  - component: {fileID: 486713277}
+  - component: {fileID: 486713276}
+  m_Layer: 0
+  m_Name: HallwayStartEvent_chair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486713275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486713274}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.257, y: -3.96, z: 0.66}
+  m_LocalScale: {x: 3.9703083, y: 1.6003234, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1417948549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486713276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486713274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37fcbe758b95b794b99ab8f782b1ed82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToFinish: 5
+  OnPlayerDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 396332761}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  AfterTime:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &486713277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486713274}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &541842104
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +946,37 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1111144155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111144156}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1111144156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111144155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.5639749, y: -0.55841863, z: -5.0050426}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118135451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2380,7 +2522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4138,6 +4280,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 64889217898853193, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3913871551553911921, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       propertyPath: m_Name
       value: Hallway
@@ -4199,11 +4345,17 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5526220962142778341, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       insertIndex: 1
+      addedObject: {fileID: 486713275}
+    - targetCorrespondingSourceObject: {fileID: 5526220962142778341, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
+      insertIndex: 2
       addedObject: {fileID: 1427984836}
     - targetCorrespondingSourceObject: {fileID: 5526220962142778341, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708013048}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 64889217898853193, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 396332761}
     - targetCorrespondingSourceObject: {fileID: 5317065345628987504, guid: f52057974e0503f4f9756a4718d62a8f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1684556239}
@@ -4526,3 +4678,4 @@ SceneRoots:
   - {fileID: 541842105}
   - {fileID: 1398094459}
   - {fileID: 702579236}
+  - {fileID: 1111144156}
