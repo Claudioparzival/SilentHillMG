@@ -10,8 +10,6 @@ public class Mannequin : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
 
-    public Transform head;
-
     public float timeToStop, timeToMove, animationSpeed;
 
     // Variables privadas
@@ -44,14 +42,13 @@ public class Mannequin : MonoBehaviour
         {
             navigation.NavigationState(true);
             navigation.MoveToPosition(Player.Instance.transform.position);
-            head.transform.LookAt(Player.Instance.transform.position);
             animator.speed = animationSpeed;
             audioSource.volume = 1.0f;
         }
         else
         {
             navigation.NavigationState(false);
-            animator.speed = 0f;
+            animator.speed = animationSpeed;
             audioSource.volume = 0f;
         }
     }

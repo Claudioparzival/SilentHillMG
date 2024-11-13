@@ -9,6 +9,8 @@ public class GazeDetector : MonoBehaviour
     public Transform point1, point2, point3;
     public bool IsRendered()
     {
+        return false;
+        /*
         if (meshRenderer.isVisible)
         {
             RaycastHit hit1, hit2, hit3;
@@ -25,5 +27,6 @@ public class GazeDetector : MonoBehaviour
         {
             return false;
         }
+        */
     }
 }
